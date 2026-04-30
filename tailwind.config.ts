@@ -92,6 +92,37 @@ export default {
           "0%": { opacity: "0", transform: "translateY(40px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
+        "orb-float": {
+          "0%, 100%": { transform: "translate(0,0) scale(1)" },
+          "33%": { transform: "translate(60px,-40px) scale(1.1)" },
+          "66%": { transform: "translate(-40px,30px) scale(0.95)" },
+        },
+        "orb-float-slow": {
+          "0%, 100%": { transform: "translate(0,0) scale(1)" },
+          "50%": { transform: "translate(-80px,60px) scale(1.15)" },
+        },
+        "shimmer": {
+          "0%": { backgroundPosition: "-200% 0" },
+          "100%": { backgroundPosition: "200% 0" },
+        },
+        "gold-sweep": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
+        "drift-line": {
+          "0%": { transform: "translateY(-100%)", opacity: "0" },
+          "20%": { opacity: "1" },
+          "80%": { opacity: "1" },
+          "100%": { transform: "translateY(100vh)", opacity: "0" },
+        },
+        "pulse-glow": {
+          "0%, 100%": { boxShadow: "0 0 0 0 hsl(var(--accent) / 0.4), 0 10px 40px -10px hsl(var(--accent) / 0.5)" },
+          "50%": { boxShadow: "0 0 0 12px hsl(var(--accent) / 0), 0 20px 50px -10px hsl(var(--accent) / 0.7)" },
+        },
+        "scroll-bounce": {
+          "0%, 100%": { transform: "translateY(0)", opacity: "0.4" },
+          "50%": { transform: "translateY(10px)", opacity: "1" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -100,6 +131,13 @@ export default {
         "fade-in-slow": "fade-in-slow 1.4s ease-out both",
         "scale-in": "scale-in 0.7s cubic-bezier(0.22,1,0.36,1) both",
         "slide-up": "slide-up 0.9s cubic-bezier(0.22,1,0.36,1) both",
+        "orb-float": "orb-float 18s ease-in-out infinite",
+        "orb-float-slow": "orb-float-slow 24s ease-in-out infinite",
+        "shimmer": "shimmer 8s linear infinite",
+        "gold-sweep": "gold-sweep 3s ease-in-out infinite",
+        "drift-line": "drift-line 12s linear infinite",
+        "pulse-glow": "pulse-glow 2.8s ease-in-out infinite",
+        "scroll-bounce": "scroll-bounce 2s ease-in-out infinite",
       },
     },
   },
