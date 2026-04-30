@@ -21,7 +21,7 @@ const Index = () => {
       <About />
       <Contact />
       <Footer />
-      <WhatsAppFloat />
+      
       <ArtworkModal artwork={selected} onClose={() => setSelected(null)} />
     </main>
   );
