@@ -130,6 +130,24 @@
   .text-gold {
     color: hsl(var(--accent));
   }
+  .bg-primary-deep {
+    background-color: hsl(var(--primary-deep));
+  }
+  .text-primary-deep {
+    color: hsl(var(--primary-deep));
+  }
+  .bg-primary-deep\/95 {
+    background-color: hsl(var(--primary-deep) / 0.95);
+  }
+  .bg-surface-dark {
+    background-color: hsl(var(--surface-dark));
+  }
+  .bg-surface-darker {
+    background-color: hsl(var(--surface-darker));
+  }
+  .bg-surface-light {
+    background-color: hsl(var(--surface-light));
+  }
   .bg-gradient-hero {
     background: var(--gradient-hero);
   }
