@@ -7,7 +7,7 @@ import { Terrace } from "@/components/Terrace";
 import { About } from "@/components/About";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
-import { WhatsAppFloat } from "@/components/WhatsAppFloat";
+
 
 const Index = () => {
   const [selected, setSelected] = useState<Artwork | null>(null);
