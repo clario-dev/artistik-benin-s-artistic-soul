@@ -4,9 +4,27 @@ import dish2 from "@/assets/dish-2.jpg";
 import dish3 from "@/assets/dish-3.jpg";
 
 const menu = [
-  { name: "Poisson grillé aux herbes", desc: "Capitaine entier, légumes du marché, sauce citronnée", price: "8 500 FCFA", img: dish3 },
-  { name: "Plat signature ARTISTIK", desc: "Viande braisée, igname dorée, jus aux épices locales", price: "9 500 FCFA", img: dish1 },
-  { name: "Symphonie de fruits frais", desc: "Sélection saisonnière, coulis maison, menthe", price: "3 500 FCFA", img: dish2 },
+  {
+    name: "Poisson grillé aux herbes",
+    desc: "Capitaine entier mariné aux herbes fraîches, grillé au feu de bois, accompagné de légumes du marché et d'une sauce citronnée maison.",
+    price: "8 500 FCFA",
+    img: dish3,
+    benefits: ["Riche en oméga-3", "Sans additifs", "Cuisson au feu de bois"],
+  },
+  {
+    name: "Plat signature ARTISTIK",
+    desc: "Notre création iconique : viande braisée lentement, igname dorée au beurre clarifié et jus corsé aux épices locales du Bénin.",
+    price: "9 500 FCFA",
+    img: dish1,
+    benefits: ["Recette signature", "Épices locales", "Cuisson lente"],
+  },
+  {
+    name: "Symphonie de fruits frais",
+    desc: "Sélection raffinée de fruits de saison du terroir béninois, sublimés par un coulis maison et une touche de menthe fraîche.",
+    price: "3 500 FCFA",
+    img: dish2,
+    benefits: ["100% naturel", "Vitamines essentielles", "Fruits de saison"],
+  },
 ];
 
 export const Terrace = () => {
@@ -82,7 +100,15 @@ export const Terrace = () => {
                 </div>
                 <div className="p-6">
                   <h4 className="font-display text-xl mb-2">{m.name}</h4>
-                  <p className="text-sm text-white/60 mb-4">{m.desc}</p>
+                  <p className="text-sm text-white/65 mb-4 leading-relaxed">{m.desc}</p>
+                  <ul className="space-y-1.5 mb-5">
+                    {m.benefits.map((b) => (
+                      <li key={b} className="flex items-center gap-2 text-xs text-white/70">
+                        <span className="w-1 h-1 bg-gold rounded-full" />
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
                   <div className="flex items-center justify-between pt-4 border-t border-white/10">
                     <span className="font-display text-lg text-gold">{m.price}</span>
                     <a
