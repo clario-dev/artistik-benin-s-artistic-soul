@@ -4,9 +4,27 @@ import dish2 from "@/assets/dish-2.jpg";
 import dish3 from "@/assets/dish-3.jpg";
 
 const menu = [
-  { name: "Poisson grillé aux herbes", desc: "Capitaine entier, légumes du marché, sauce citronnée", price: "8 500 FCFA", img: dish3 },
-  { name: "Plat signature ARTISTIK", desc: "Viande braisée, igname dorée, jus aux épices locales", price: "9 500 FCFA", img: dish1 },
-  { name: "Symphonie de fruits frais", desc: "Sélection saisonnière, coulis maison, menthe", price: "3 500 FCFA", img: dish2 },
+  {
+    name: "Poisson grillé aux herbes",
+    desc: "Capitaine entier mariné aux herbes fraîches, grillé au feu de bois, accompagné de légumes du marché et d'une sauce citronnée maison.",
+    price: "8 500 FCFA",
+    img: dish3,
+    benefits: ["Riche en oméga-3", "Sans additifs", "Cuisson au feu de bois"],
+  },
+  {
+    name: "Plat signature ARTISTIK",
+    desc: "Notre création iconique : viande braisée lentement, igname dorée au beurre clarifié et jus corsé aux épices locales du Bénin.",
+    price: "9 500 FCFA",
+    img: dish1,
+    benefits: ["Recette signature", "Épices locales", "Cuisson lente"],
+  },
+  {
+    name: "Symphonie de fruits frais",
+    desc: "Sélection raffinée de fruits de saison du terroir béninois, sublimés par un coulis maison et une touche de menthe fraîche.",
+    price: "3 500 FCFA",
+    img: dish2,
+    benefits: ["100% naturel", "Vitamines essentielles", "Fruits de saison"],
+  },
 ];
 
 export const Terrace = () => {
