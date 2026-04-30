@@ -100,7 +100,15 @@ export const Terrace = () => {
                 </div>
                 <div className="p-6">
                   <h4 className="font-display text-xl mb-2">{m.name}</h4>
-                  <p className="text-sm text-white/60 mb-4">{m.desc}</p>
+                  <p className="text-sm text-white/65 mb-4 leading-relaxed">{m.desc}</p>
+                  <ul className="space-y-1.5 mb-5">
+                    {m.benefits.map((b) => (
+                      <li key={b} className="flex items-center gap-2 text-xs text-white/70">
+                        <span className="w-1 h-1 bg-gold rounded-full" />
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
                   <div className="flex items-center justify-between pt-4 border-t border-white/10">
                     <span className="font-display text-lg text-gold">{m.price}</span>
                     <a
