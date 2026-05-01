@@ -192,4 +192,52 @@ export const blogPosts: BlogPost[] = [
       "Servi avec des légumes du marché et une sauce citronnée maison, c'est notre hommage à la cuisine vraie — celle qui ne triche pas.",
     ],
   },
+  {
+    slug: "livraison-art-africain-europe-france",
+    title: "Acheter de l'art africain depuis l'Europe : livraison sécurisée vers la France",
+    excerpt:
+      "Comment acquérir une œuvre d'art béninoise depuis Paris, Bruxelles, Genève ou Berlin ? Notre guide complet : douanes, transport, certificat, paiement en euros.",
+    category: "Guide collectionneur",
+    date: "2026-04-22",
+    readTime: "7 min",
+    cover: painting1,
+    keywords: [
+      "acheter art africain France",
+      "livraison œuvre art Europe",
+      "art béninois Paris",
+      "galerie Bénin Belgique",
+      "art africain Suisse",
+      "paiement euro art",
+    ],
+    content: [
+      "L'art contemporain africain séduit de plus en plus de collectionneurs européens. Mais comment acheter une œuvre depuis la France, la Belgique, la Suisse ou le Luxembourg en toute sérénité ? Voici notre méthode.",
+      "Étape 1 — La sélection : nos œuvres sont présentées en haute définition, avec dimensions précises, matériaux, et prix affichés en euros, taxes incluses. Un échange WhatsApp permet d'obtenir vidéos et vues complémentaires avant tout engagement.",
+      "Étape 2 — Le paiement : virement SEPA, paiement par carte sécurisé, ou acompte selon les modalités. Une facture en euros est systématiquement émise.",
+      "Étape 3 — L'expédition : emballage muséal, transporteur international suivi (DHL, FedEx). Délai moyen de 7 à 14 jours vers l'Union européenne. Les formalités douanières sont prises en charge.",
+      "Chaque œuvre arrive accompagnée de son certificat d'authenticité signé par l'artiste. Une garantie qui protège la valeur patrimoniale et assurance-collection de votre acquisition.",
+    ],
+  },
+  {
+    slug: "decoration-interieur-art-africain",
+    title: "Décoration d'intérieur : intégrer l'art africain dans un appartement européen",
+    excerpt:
+      "Conseils d'architectes d'intérieur pour intégrer peintures, sculptures et textiles africains dans un habitat parisien, scandinave ou méditerranéen.",
+    category: "Décoration",
+    date: "2026-04-18",
+    readTime: "6 min",
+    cover: craft2,
+    keywords: [
+      "décoration art africain",
+      "intérieur ethnique chic",
+      "art mural appartement",
+      "architecte intérieur art",
+      "décoration scandinave africaine",
+    ],
+    content: [
+      "L'art africain s'invite avec élégance dans les intérieurs européens. Loin des clichés, il dialogue avec le minimalisme scandinave, le haussmannien parisien ou le contemporain méditerranéen.",
+      "Une grande peinture à la feuille d'or sublime un mur blanc dans un salon épuré. Un masque sculpté apporte de la profondeur à une bibliothèque en chêne. Un textile indigo réchauffe une chambre aux tons neutres.",
+      "Le secret : un seul point focal par pièce, et un éclairage soigné — spots LED orientables ou applique murale dédiée — qui révèle les textures et les patines.",
+      "Nos conseillers vous accompagnent à distance : envoyez-nous une photo de votre espace, nous vous suggérons les œuvres les plus adaptées en termes de format, palette et énergie. Un service inclus, gratuit, par WhatsApp.",
+    ],
+  },
 ];
