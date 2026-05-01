@@ -4,10 +4,11 @@ import { Logo } from "./Logo";
 import { cn } from "@/lib/utils";
 
 const links = [
-  { href: "#galerie", label: "Galerie" },
-  { href: "#terrasse", label: "Terrasse" },
-  { href: "#histoire", label: "Histoire" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#galerie", label: "Galerie" },
+  { href: "/#terrasse", label: "Terrasse" },
+  { href: "/#histoire", label: "Histoire" },
+  { href: "/#blog", label: "Journal" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export const Navbar = () => {
