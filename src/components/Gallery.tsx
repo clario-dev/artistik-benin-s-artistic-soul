@@ -78,10 +78,10 @@ export const Gallery = ({ onSelect }: { onSelect: (a: Artwork) => void }) => {
     <section id="galerie" className="py-28 bg-secondary">
       <div className="container">
         <div className="text-center mb-16">
-          <p className="text-accent uppercase tracking-[0.4em] text-xs mb-4">Collection</p>
-          <h2 className="font-display text-4xl md:text-6xl mb-6">Galerie d'œuvres</h2>
+          <p className="eyebrow mb-4">Collection</p>
+          <h2 className="heading-section mb-6">Galerie d'œuvres</h2>
           <span className="gold-divider" />
-          <p className="max-w-xl mx-auto mt-6 text-muted-foreground">
+          <p className="lead-muted max-w-xl mx-auto mt-6">
             Chaque pièce est une narration. Sélectionnez la catégorie qui vous inspire.
           </p>
         </div>
@@ -121,10 +121,8 @@ export const Gallery = ({ onSelect }: { onSelect: (a: Artwork) => void }) => {
                 />
               </div>
               <div className="p-6">
-                <p className="text-xs uppercase tracking-widest text-accent mb-2">
-                  {art.category}
-                </p>
-                <h3 className="font-display text-2xl mb-2">{art.title}</h3>
+                <p className="eyebrow mb-2 text-[0.65rem]">{art.category}</p>
+                <h3 className="font-display text-2xl text-foreground mb-2">{art.title}</h3>
                 <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
                   {art.description}
                 </p>

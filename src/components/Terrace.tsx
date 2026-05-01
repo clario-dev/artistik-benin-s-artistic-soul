@@ -42,8 +42,8 @@ export const Terrace = () => {
         <div className="absolute inset-0 bg-gradient-overlay" />
         <div className="absolute inset-0 flex items-end pb-20">
           <div className="container text-white animate-fade-in">
-            <p className="text-accent uppercase tracking-[0.4em] text-xs mb-4">L'expérience</p>
-            <h2 className="font-display text-4xl md:text-6xl max-w-2xl text-balance">
+            <p className="eyebrow mb-4">L'expérience</p>
+            <h2 className="heading-section text-white max-w-2xl text-balance">
               La terrasse culinaire,
               <br />
               <span className="italic text-gold">un art à savourer</span>
@@ -76,9 +76,9 @@ export const Terrace = () => {
                 { n: "0", l: "Additif" },
                 { n: "★★★", l: "Excellence" },
               ].map((s) => (
-                <div key={s.l} className="border border-white/15 p-6">
+                <div key={s.l} className="border border-white/20 bg-white/[0.03] p-6">
                   <div className="font-display text-3xl text-gold mb-1">{s.n}</div>
-                  <div className="text-xs uppercase tracking-widest text-white/60">{s.l}</div>
+                  <div className="text-xs uppercase tracking-widest text-white/75">{s.l}</div>
                 </div>
               ))}
             </div>
@@ -99,23 +99,23 @@ export const Terrace = () => {
                   <img src={m.img} alt={m.name} className="w-full h-full object-cover" loading="lazy" width={900} height={900} />
                 </div>
                 <div className="p-6">
-                  <h4 className="font-display text-xl mb-2">{m.name}</h4>
-                  <p className="text-sm text-white/65 mb-4 leading-relaxed">{m.desc}</p>
+                  <h4 className="font-display text-xl text-white mb-2">{m.name}</h4>
+                  <p className="text-sm text-white/75 mb-4 leading-relaxed">{m.desc}</p>
                   <ul className="space-y-1.5 mb-5">
                     {m.benefits.map((b) => (
-                      <li key={b} className="flex items-center gap-2 text-xs text-white/70">
+                      <li key={b} className="flex items-center gap-2 text-xs text-white/80">
                         <span className="w-1 h-1 bg-gold rounded-full" />
                         {b}
                       </li>
                     ))}
                   </ul>
-                  <div className="flex items-center justify-between pt-4 border-t border-white/10">
+                  <div className="flex items-center justify-between pt-4 border-t border-white/15">
                     <span className="font-display text-lg text-gold">{m.price}</span>
                     <a
                       href={`https://wa.me/2290197693078?text=${encodeURIComponent(`Bonjour, je souhaite commander : ${m.name}`)}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-xs uppercase tracking-widest text-white/80 hover:text-accent transition-smooth"
+                      className="text-xs uppercase tracking-widest text-white/90 hover:text-accent transition-smooth"
                     >
                       Commander →
                     </a>

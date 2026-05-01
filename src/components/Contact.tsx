@@ -19,8 +19,8 @@ export const Contact = () => {
     <section id="contact" className="py-28 bg-secondary">
       <div className="container">
         <div className="text-center mb-16">
-          <p className="text-accent uppercase tracking-[0.4em] text-xs mb-4">Contact</p>
-          <h2 className="font-display text-4xl md:text-6xl mb-6">Parlons art</h2>
+          <p className="eyebrow mb-4">Contact</p>
+          <h2 className="heading-section mb-6">Parlons art</h2>
           <span className="gold-divider" />
         </div>
 
@@ -43,7 +43,7 @@ export const Contact = () => {
                   <c.icon size={20} />
                 </div>
                 <div>
-                  <p className="text-xs uppercase tracking-widest text-accent mb-1">{c.label}</p>
+                  <p className="eyebrow mb-1 text-[0.65rem]">{c.label}</p>
                   <p className="text-foreground font-medium">{c.value}</p>
                 </div>
               </a>
@@ -61,32 +61,32 @@ export const Contact = () => {
 
           <form onSubmit={onSubmit} className="bg-card p-8 border border-border space-y-5 shadow-soft">
             <div>
-              <label className="block text-xs uppercase tracking-widest mb-2">Nom</label>
+              <label className="block text-xs uppercase tracking-widest text-foreground/80 mb-2">Nom</label>
               <input
                 required
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
-                className="w-full bg-transparent border-b border-border focus:border-primary py-3 outline-none transition-smooth"
+                className="w-full bg-transparent border-b border-border text-foreground placeholder:text-muted-foreground focus:border-primary py-3 outline-none transition-smooth"
               />
             </div>
             <div>
-              <label className="block text-xs uppercase tracking-widest mb-2">Email</label>
+              <label className="block text-xs uppercase tracking-widest text-foreground/80 mb-2">Email</label>
               <input
                 type="email"
                 required
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
-                className="w-full bg-transparent border-b border-border focus:border-primary py-3 outline-none transition-smooth"
+                className="w-full bg-transparent border-b border-border text-foreground focus:border-primary py-3 outline-none transition-smooth"
               />
             </div>
             <div>
-              <label className="block text-xs uppercase tracking-widest mb-2">Message</label>
+              <label className="block text-xs uppercase tracking-widest text-foreground/80 mb-2">Message</label>
               <textarea
                 required
                 rows={5}
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
-                className="w-full bg-transparent border-b border-border focus:border-primary py-3 outline-none resize-none transition-smooth"
+                className="w-full bg-transparent border-b border-border text-foreground focus:border-primary py-3 outline-none resize-none transition-smooth"
               />
             </div>
             <button
