@@ -5,6 +5,7 @@ import { Gallery, type Artwork } from "@/components/Gallery";
 import { ArtworkModal } from "@/components/ArtworkModal";
 import { Terrace } from "@/components/Terrace";
 import { About } from "@/components/About";
+import { Blog } from "@/components/Blog";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
@@ -19,6 +20,7 @@ const Index = () => {
       <Gallery onSelect={setSelected} />
       <Terrace />
       <About />
+      <Blog />
       <Contact />
       <Footer />
       

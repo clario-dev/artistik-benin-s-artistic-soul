@@ -267,6 +267,43 @@
     transform: translateY(-2px);
   }
 
+  /* === Brand typography hierarchy === */
+  .eyebrow {
+    color: hsl(var(--accent));
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+  .heading-hero {
+    font-family: var(--font-display);
+    font-size: clamp(2.75rem, 7vw, 7.5rem);
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    color: hsl(var(--foreground));
+  }
+  .heading-section {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4.5vw, 3.75rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: hsl(var(--foreground));
+  }
+  .heading-sub {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+    line-height: 1.2;
+    color: hsl(var(--foreground));
+  }
+  .lead-muted {
+    color: hsl(var(--muted-foreground));
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  /* Force readable text on dark surfaces */
+  .on-dark { color: hsl(0 0% 100%); }
+  .on-dark-muted { color: hsl(0 0% 100% / 0.78); }
+
   /* Animated text shimmer */
   .text-shimmer-gold {
     background: linear-gradient(90deg, hsl(42 70% 60%) 0%, hsl(42 95% 80%) 50%, hsl(42 70% 60%) 100%);
