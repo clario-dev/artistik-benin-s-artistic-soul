@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import painting1 from "@/assets/art-painting-1.jpg";
 import painting2 from "@/assets/art-painting-2.jpg";
 import sculpture1 from "@/assets/art-sculpture-1.jpg";
@@ -14,6 +15,7 @@ export type Artwork = {
   category: Exclude<Category, "tous">;
   description: string;
   price: string;
+  priceEur: number;
   image: string;
 };
 
@@ -23,7 +25,8 @@ export const artworks: Artwork[] = [
     title: "Confluence d'Or",
     category: "peinture",
     description: "Acrylique et feuille d'or sur toile. Dialogue entre tradition et modernité.",
-    price: "350 000 FCFA",
+    price: "535 €",
+    priceEur: 535,
     image: painting1,
   },
   {
@@ -31,7 +34,8 @@ export const artworks: Artwork[] = [
     title: "Regard Souverain",
     category: "peinture",
     description: "Portrait contemporain — pigments naturels et technique mixte.",
-    price: "280 000 FCFA",
+    price: "425 €",
+    priceEur: 425,
     image: painting2,
   },
   {
@@ -39,7 +43,8 @@ export const artworks: Artwork[] = [
     title: "Mère Originelle",
     category: "sculpture",
     description: "Bronze patiné. Une ode à la maternité et à l'enracinement.",
-    price: "750 000 FCFA",
+    price: "1 145 €",
+    priceEur: 1145,
     image: sculpture1,
   },
   {
@@ -47,7 +52,8 @@ export const artworks: Artwork[] = [
     title: "Masque Ancestral",
     category: "sculpture",
     description: "Bois sculpté à la main, finition huilée. Pièce unique.",
-    price: "180 000 FCFA",
+    price: "275 €",
+    priceEur: 275,
     image: sculpture2,
   },
   {
@@ -55,7 +61,8 @@ export const artworks: Artwork[] = [
     title: "Trésors d'Argile",
     category: "artisanat",
     description: "Ensemble de poterie et vannerie tressée — savoir-faire local.",
-    price: "95 000 FCFA",
+    price: "145 €",
+    priceEur: 145,
     image: craft1,
   },
   {
@@ -63,28 +70,39 @@ export const artworks: Artwork[] = [
     title: "Tissage Royal",
     category: "artisanat",
     description: "Textile tissé main, motifs indigo et or. Édition limitée.",
-    price: "120 000 FCFA",
+    price: "185 €",
+    priceEur: 185,
     image: craft2,
   },
 ];
 
 const categories: Category[] = ["tous", "peinture", "sculpture", "artisanat"];
 
-export const Gallery = ({ onSelect }: { onSelect: (a: Artwork) => void }) => {
+export const Gallery = ({
+  onSelect,
+  showHeader = true,
+  showCta = false,
+}: {
+  onSelect: (a: Artwork) => void;
+  showHeader?: boolean;
+  showCta?: boolean;
+}) => {
   const [filter, setFilter] = useState<Category>("tous");
   const items = filter === "tous" ? artworks : artworks.filter((a) => a.category === filter);
 
   return (
     <section id="galerie" className="py-28 bg-secondary">
       <div className="container">
-        <div className="text-center mb-16">
-          <p className="eyebrow mb-4">Collection</p>
-          <h2 className="heading-section mb-6">Galerie d'œuvres</h2>
-          <span className="gold-divider" />
-          <p className="lead-muted max-w-xl mx-auto mt-6">
-            Chaque pièce est une narration. Sélectionnez la catégorie qui vous inspire.
-          </p>
-        </div>
+        {showHeader && (
+          <div className="text-center mb-16">
+            <p className="eyebrow mb-4">Collection</p>
+            <h2 className="heading-section mb-6">Galerie d'œuvres</h2>
+            <span className="gold-divider" />
+            <p className="lead-muted max-w-xl mx-auto mt-6">
+              Chaque pièce est une narration. Sélectionnez la catégorie qui vous inspire.
+            </p>
+          </div>
+        )}
 
         <div className="flex flex-wrap justify-center gap-2 mb-14">
           {categories.map((c) => (
@@ -136,6 +154,17 @@ export const Gallery = ({ onSelect }: { onSelect: (a: Artwork) => void }) => {
             </article>
           ))}
         </div>
+
+        {showCta && (
+          <div className="text-center mt-16">
+            <Link
+              to="/galerie"
+              className="inline-block px-10 py-4 bg-primary text-primary-foreground uppercase tracking-widest text-sm font-medium hover:bg-primary/90 transition-smooth"
+            >
+              Voir toute la collection →
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );

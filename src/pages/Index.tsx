@@ -17,7 +17,7 @@ const Index = () => {
     <main className="min-h-screen bg-background">
       <Navbar />
       <Hero />
-      <Gallery onSelect={setSelected} />
+      <Gallery onSelect={setSelected} showCta />
       <Terrace />
       <About />
       <Blog />
