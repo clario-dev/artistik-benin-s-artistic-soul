@@ -4,6 +4,7 @@ import { Logo } from "./Logo";
 import { cn } from "@/lib/utils";
 
 const links = [
+  { href: "/", label: "Accueil" },
   { href: "/galerie", label: "Galerie" },
   { href: "/terrasse", label: "Terrasse" },
   { href: "/#histoire", label: "Histoire" },
